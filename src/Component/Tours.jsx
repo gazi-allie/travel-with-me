@@ -11,7 +11,7 @@ function Tours({tours, removeTour}){
         <div className='cards'>
             {
                 tours.map((tour)=>{
-                    return <Card {...tour} removeeTour={removeTour} > </Card>//...+>cloning
+                    return <Card key={tour.id} {...tour} removeeTour={removeTour} > </Card>//...+>cloning
                 })
             }
 
